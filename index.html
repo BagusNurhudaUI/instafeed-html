@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instafeed on Your Website</title>
+	<style type="text/css">
+		a img{ 
+			width: 25%;
+		}
+        #instafeed img{
+    width: 18em;
+    height: 18em;
+    border-style: solid;
+    border-color: white;
+    border-bottom: 10px;
+    object-fit: cover;
+  }
+	</style>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+</head>
+<body>
+	<h1 style="text-align: center">Show Instagram Feed on your Website</h1>
+    <div id="instafeed"></div>
+
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        userId : 5190408211001920,
+        target: "instafeed",
+        accessToken: 'IGQVJVbWtSX1Rwa0lvUWVESG02MUp0SFoxaDFvZAGJPM2NWZAnRCNThHLUk1eHVLU0c0ZAmJ6S05LTWhaSXZAfYU1OSHNQN2NXbWZAXYXlQR3RVQXRET0NCeDdWUW1zZA1dBTTE5M0g0R0NoekpMV3F0a19GMgZDZD'
+    });
+    feed.run();
+    </script>
+
+
+
+	
+	<!-- <script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJYOWZAyTGZAaYmxiX1JtV0s2dkJRbTlhMDNVSzNDbm1MQ1JqQU1jV2NjSUlncFAteTNsWkFDMEZA5TklvenliQlpzN0stRDhCZAEFzWmdhcnQ5VW1LTVpnTHFJVU5UTUE2X3VoTHBIOHhPTm9wZATRKUAZDZD'
+	});
+	userFeed.run();
+	</script> -->
+</body>
+</html>
